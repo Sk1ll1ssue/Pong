@@ -41,6 +41,16 @@ int main(int argc, char* argv[])
 
     SetTargetFPS(60);
    
+    Player player1 = Player{};
+    Player player2 = Player{};
+
+    player1.position = { 25, 180 };
+    player1.size = { 10,100 };
+    player1.color = RED;
+
+    player2.position = { 775, 180 };
+    player2.size = { 10,100 };
+    player2.color = GREEN;
 
     //--------------------------------------------------------------------------------------
 
@@ -57,6 +67,9 @@ int main(int argc, char* argv[])
         BeginDrawing();
 
         ClearBackground(BLACK);
+
+        player1.Draw();
+        player2.Draw();
 
         EndDrawing();
         //----------------------------------------------------------------------------------
