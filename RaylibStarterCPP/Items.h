@@ -6,4 +6,8 @@ class Items
 
 	virtual void Draw() {}
 
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> Ball
